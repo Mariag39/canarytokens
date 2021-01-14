@@ -131,7 +131,7 @@ class Canarydrop(object):
 
         path.append(pages[random.randint(0,len(pages)-1)])
 
-        generated_url += '/'.join(path)
+        generated_url += ':8080/'.join(path)
 
         self._drop['generated_url'] = generated_url
 
